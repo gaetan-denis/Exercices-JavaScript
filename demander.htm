@@ -1,0 +1,18 @@
+<html>
+   <head>
+      <title>Ecrire un programme qui exécute une fenêtre prompt</title>
+      <script>
+         var proposition;
+         //déclaration de la variable proposition
+         function Main(){
+            proposition = prompt("Proposez une injure du capitaine Haddock :","Ecrivez votre proposition ici") ; 
+            // stockage de la valeur proposée dans la variable proposition
+            document.write("Le capitaine Haddock dit : ") ;
+             document.write(proposition) ;
+             // on écrit la valeur de la proposition dans le document
+         }
+      </script>
+   </head>
+   <body onload="Main();">
+   </body>
+</html>

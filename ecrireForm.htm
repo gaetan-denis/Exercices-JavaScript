@@ -1,0 +1,18 @@
+<html>
+   <head>
+      <title>
+         Créer un programme qui affiche le texte "Bienvenue dans l’univers de la BD !" dans un champ texte d'un formulaire
+      </title>
+      <script>
+        function Main(){
+	document.accueil.message.value ="Bienvenue dans l'univers de la bd";
+	}
+      </script>
+   </head>
+  <body>
+	<body onload="Main();">
+	<form name="accueil">
+		<input type="Text" name=message size= "40">
+	</form>  
+  </body>
+</html>

@@ -1,0 +1,25 @@
+<html>
+   <head>
+      <title>
+         Programme qui lit
+      </title>
+      <script>
+         var prop;
+         // on déclare la variable proposition
+         function Main(){
+            prop = document.echo.proposition.value ;
+             // on enregistre la proposition dans la variable proposition
+            document.echo.injure.value = prop; 
+            // on écrit la valeur proposée dans le champ texte " injure "
+         }
+      </script>
+   </head>
+   <body>
+      <form name="echo">
+         <input type="text" name="proposition">
+            <input type="button" value="Répéter la proposition" onclick="Main()">
+               Le capitaine Haddock dit : 
+               <input type="text" name="injure">
+               </form>
+            </body>
+          </html>
