@@ -1,15 +1,20 @@
 <html>
-   <meta charset="UTF-8">
-      <head>
-         <title>
-            Ecrire un programme qui affiche le texte "Bienvenue dans l’univers de la BD !" 
-         </title>
-         <script>
-            function Main(){
-               alert("Bienvenue dans l’univers de la BD !") ; 
-            }
-         </script>
-      </head>
-      <body onload="Main();">
-      </body>
-   </html> le texte
+   <head>
+	<meta charset ="UTF-8">
+      <title>
+         Afficher 3 fois le texte "Bienvenue dans l’univers de la BD" dans le document
+      </title>
+      <script>
+         function Main(){
+            document.write("Bienvenue dans l’univers de la BD !<br>") ;
+               // afficher une 1re fois
+               document.write("Bienvenue dans l’univers de la BD !<br>") ;
+                   // afficher une 2e fois
+                  document.write("Bienvenue dans l’univers de la BD ! <br>") ;
+                      // afficher une 3e fois
+                  }
+               </script>
+            </head>
+            <body onload="Main()">
+            </body>
+         </html>
