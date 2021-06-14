@@ -3,10 +3,28 @@
 <head>
 	<meta charset="UTF-8">
 	<title>
-		textLacun.html
+		texte lacunaire.html
 	</title>
+	<script>
+ 		var prop1;
+		var prop2;
+		var prop3;
+		function Main (){
+		prop1=document.form.prop1.value;
+		prop2=document.form.prop2.value;
+		prop3=document.form.prop3.value;
+		alert("Les "+prop1+" de cette bande "+prop2+ "sont des petits "+prop3 + " tout bleus ") ;
+		}	
+	</script>
 </head>
 <body>
-Les...de cette bande...sont des petits...tout bleus
+	<h1>Complétez le texte lacunaire suivant</h1>
+	<p>Les...de cette bande...sont des petits...tout bleus</p>
+	<form name="form">
+	1er mot manquant : <input type="text" name ="prop1"/><br>
+		2ème mot manquant : <input type="text" name ="prop2"/><br>
+			3ème mot manquant : <input type="text" name ="prop3"/><br>
+			<input type="button" value="Compléter le texte" onClick="Main();">
+	</form>
 </body>
 </html>
