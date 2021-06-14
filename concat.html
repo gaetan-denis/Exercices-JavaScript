@@ -1,0 +1,18 @@
+<html> 
+	<head> 
+		<title>Concaténation</title> 
+	<script>  
+		var prenom; 
+		function Main(){  
+			prenom = document.form.prenom.value;  
+			document.write("Il était une fois " + prenom + ". " + prenom + " se promenait sur la plage lorsque, soudain, "+prenom+" entendit une personne appeler : " + prenom + " !" + prenom + "!! " + prenom + " se retourna mais se rendit vite compte que la personne était en train de rappeler son chien " + prenom + " !!!"); 
+		} 
+	</script> 
+	</head>
+	<body> 
+		<form name="form"> 
+			Votre prénom: <input type="text" name="prenom"> 
+			<input type="button" value="Afficher" onClick="Main();"> 
+		</form> 
+	</body> 
+</html>
