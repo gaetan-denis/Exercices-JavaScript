@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>
+			Ecrire un programme qui récupère un mot de passe dans un formulaire
+		</title>
+		<script>
+			var motpropose;
+			function Main(){
+			motpropose=document.securite.motdepasse.value;
+			if(motpropose=="bachibouzouk")
+			alert("Vous avez le droit d'entrer!");
+			else
+			alert("Vous n'avez PAS le droit d'entrer");
+			}
+		</script>
+	</head>
+	<body>
+		<h3>Zone Sécurisée</h3>
+		<p>Veuillez entrer votre mot de passe:</p>
+		<form name="securite">
+			<input type="text" name="motdepasse">
+			<input type="button" value="ENTRER" onclick="Main();">
+		</form>
+	</body>
+</html>
