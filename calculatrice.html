@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+<head lang="fr">
+	<meta charset ="UTF-8">
+	<title>Calculatrice</title>
+	<script>
+		var nombre1;
+		var nombre2;
+		var resultat;
+		function Addition() {
+		nombre1=parseFloat(document.calculatrice.nombre1.value);
+		nombre2=parseFloat(document.calculatrice.nombre2.value);
+		resultat=nombre1+nombre2;
+		document.calculatrice.resultat.value=resultat;
+		}
+
+		function Soustraction() {
+		nombre1=parseFloat(document.calculatrice.nombre1.value);
+		nombre2=parseFloat(document.calculatrice.nombre2.value);
+		resultat=nombre1-nombre2;
+		document.calculatrice.resultat.value=resultat;
+		}
+
+		function Multiplication() {
+		nombre1=parseFloat(document.calculatrice.nombre1.value);
+		nombre2=parseFloat(document.calculatrice.nombre2.value);
+		resultat=nombre1*nombre2;
+		document.calculatrice.resultat.value=resultat;
+		}
+		
+		function Division() {
+		nombre1=parseFloat(document.calculatrice.nombre1.value);
+		nombre2=parseFloat(document.calculatrice.nombre2.value);
+		resultat=nombre1/nombre2;
+		document.calculatrice.resultat.value=resultat;
+		}
+	</script>
+</head>
+<body>
+	<form name="calculatrice">
+	<input type="text" name="nombre1">
+	<input type="button" value="+" onclick="Addition();">
+	<input type="button" value="-" onclick="Soustraction();">
+	<input type="button" value="*" onclick="Multiplication();">
+	<input type="button" value="/" onclick="Division();">
+	<input type="text" name="nombre2">
+	=
+	<input type="text" name="resultat">
+	</form>
+</body>
+</html>
