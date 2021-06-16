@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title>Le jeu du bon numéro</title>
+<script type="text/javascript">
+	var nombre;
+	var proposition ;
+// on choisit le nombre au hasard en début de programme
+nombre = Math.round(Math.random()*10);
+function Main(){
+	proposition = document.jeu.prop.value;
+	if(proposition == ""){
+		alert("Veuillez introduire un nombre entre 0 et 10") ;
+	}
+	else{
+		if(proposition == nombre){
+			alert("gagné !") ;
+		}
+		else if(proposition < nombre){
+			alert("Le nombre à trouver est plus grand !") ;
+		}
+		else{
+			alert("Le nombre à trouver est plus petit ! ") ;
+		}
+	}
+}
+</script> 
+</head>
+<body>
+<h1>Le jeu du bon numéro</h1>
+<form name="jeu">
+	<input type="Text" name="prop"> <input type="Button" value=" verifier!" onclick="Main();">
+</form>
+</body>
+</html>

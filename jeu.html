@@ -1,0 +1,33 @@
+<!Doctype html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Jeu</title>
+		<script>
+			
+			var nombre;
+			var prop;
+			nombre=Math.round(Math.random()*10);
+			function Main(){
+			prop=parseFloat(document.form.proposition.value);
+			if(prop==nombre) {
+			alert("Félicitation, vous avez gagné!");
+			}
+			else if(prop<nombre) {
+			alert("Plus grand");
+			}
+			else {
+			alert("Plus petit");
+			}
+			}
+		</script>
+	</head>
+	<body>
+		<h1>Un nombre au hasard entre 0 et 10</h1>
+		<p>Le programme va maintenant choisir une nombre entre 1 et 10 aléatoirement, à vous de le deviner</p>
+		<form name="form">
+		<input type="text" name="proposition" placeholder="Votre proposition">
+		<input type="button" value ="Jouer" onclick="Main();">
+		</form>	
+</body>
+</html>

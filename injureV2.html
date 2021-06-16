@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+   <head>
+	   	   <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+      <title>
+		  Contrôle de formulaire
+	  </title>
+      <script>
+         var injure;
+         // on déclare la variable injure
+         function Main() {
+            injure = document.BD.propal.value;
+             // on enregistre la proposition dans la variable injure
+		if (injure == "") {
+			alert("Le formulaire ne peut pas être vide. Veuillez proposer une injure du capitaine Haddock");
+		} else {
+			alert("Le capitaine Haddock a dit" + injure );
+			// on affiche la proposition et la variable injure dans le champ echo du formulaire
+         }
+	}
+      </script>
+  </head>
+   <body>
+	   <h1>Proposez une injure du Capitaine Haddock</h1>
+      <form name="BD">
+         <input type="text" name="propal">
+            <input type="button" value="Envoyer" onclick="Main()">
+               </form>
+            </body>
+          </html>
