@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+	<head lang="fr">
+		<meta charset="UTF-8">
+		<title>Quizz</title>
+		<style>
+			.resizedTextbox {width: 20px; 
+			}
+		</style>
+		<script>
+			var reponse1
+			var reponse2
+			var reponse3
+			score="0"
+			
+			function Main() {
+				reponse1=(document.quizz.question1.value);
+				reponse2=(document.quizz.question2.value);
+				reponse3=(document.quizz.question3.value);
+				if(reponse1=="101") {
+				score=+1;
+				}else {
+				score=+0 ;
+				}
+				
+				if(reponse2=="7") {
+				score=+1;
+				}else {
+				score=+0 ;
+				}
+				
+				if(reponse1=="3") {
+				score=+1;
+				}else {
+				score=+0 ;
+				}
+				alert( "Vous avez terminé le quizz! Vous avez " + score+ "/3!");
+
+			}
+		</script>
+</head>
+
+<body>
+	<h1>Miniquizz</h1>
+	<form name=quizz>
+		<p>Combien y a t-il de Dalmatiens? <input type="text" name="question1" class="resizedTextbox"></p>
+		<p>Combien de nains accueillent Blanche-Neige? <input type="text" name="question2" class="resizedTextbox"></p>
+		<p>Combien Picsou a-t-il de neveux? <input type="text" name="question3" class="resizedTextbox"></p>
+		<input type="button" value="Envoyer les réponses" onclick="Main();"
+	</form>
+</body>
+</html>
