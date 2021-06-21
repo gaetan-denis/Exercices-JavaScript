@@ -1,6 +1,6 @@
 <!DOCTYPE html>
-<html>
-	<head lang="fr">
+<html lang='fr'>
+	<head>
 		<meta charset="UTF-8">
 		<title>Quizz</title>
 		<style>
@@ -11,29 +11,29 @@
 			var reponse1
 			var reponse2
 			var reponse3
-			var score="0"
+			var score=0
 			
 			function Main() {
 				reponse1=(document.quizz.question1.value);
 				reponse2=(document.quizz.question2.value);
 				reponse3=(document.quizz.question3.value);
 				/* Mon premier jet que je pense être dans la bonne direction, cependant impossible d'augmenter la valeur du score en fonction des réponses.
-				Ce doit être une erreur basique*/
+				Ce doit être une erreur basique. Mon idée serait partir d'un score de 0 et que chaque bonne réponse rajoute +1 au score.*/
 				
 				if(reponse1=="101") {
-				score=+1
-				}else {
-				score="+0" ;
-				}
-				
-				if(reponse2=="7") {
-				score=+1;
+				score+=1
 				}else {
 				score=+0 ;
 				}
 				
+				if(reponse2=="7") {
+				score+=1;
+				}else {
+				score +=1 ;
+				}
+				
 				if(reponse1=="3") {
-				score=+1;
+				score+=1;
 				}else {
 				score=+0 ;
 				}
