@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title>Ecrire un programme qui affiche la liste de BD du Petit Spirou triées par ordre alphabétique</title>
+<script type="text/javascript">
+var spirou = new Array();
+// déclaration de la variable spirou qui est de type tableau
+spirou = ["Dis Bonjour à la dame !","Tu veux mon doigt ?","Mais ! Qu&#039;est-ce que tu fabriques ?","C&#039;est pour ton bien !","Merci qui ?","N&#039;oublies pas ta capuche !","Demande à ton père !","T&#039;as qu&#039;à t&#039;retenir !","C&#039;est pas de ton âge !","Tu comprendras quand tu seras grand !"] ;
+// assignation de l&#039;ensemble des valeurs dans le tableau
+
+spirou = spirou.sort(); // tri du tableau par ordre alphabétique
+function Main(){
+	for( i=0 ; i < spirou.length ; i = i + 1 ){
+  		document.write(spirou[i] + "<br />") ;
+	}
+}
+</script>
+</head>
+<body onload="Main();">
+</body>
+</html>
